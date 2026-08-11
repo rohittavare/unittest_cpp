@@ -4,15 +4,15 @@ load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
 cc_library(
     name = "unittest",
     srcs = [
-        "unittest.cpp",
+        "unittest/unittest.cpp",
     ],
     hdrs = [
-        "headers/unittest.h",
+        "unittest/unittest.h",
     ],
 )
 
 cc_binary(
-    name = "test_unittest",
+    name = "tests",
     srcs = [
         "tests/test_unittest.cpp",
     ],
