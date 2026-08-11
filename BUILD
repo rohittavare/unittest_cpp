@@ -9,6 +9,7 @@ cc_library(
     hdrs = [
         "unittest/unittest.h",
     ],
+    visibility = ["//visibility:public"],
 )
 
 cc_binary(
